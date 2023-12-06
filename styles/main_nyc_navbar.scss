@@ -1,0 +1,11 @@
+.main-nyc-navbar {
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+ align-items: center;
+
+ // Media query for larger screens
+ @media (min-width: 768px) {
+  padding: 10px 100px;
+ }
+}

@@ -1,0 +1,47 @@
+.chanel-main-banner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px; // Reduced padding for mobile
+ background: #F7F7F7;
+ color: #444;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ font-family: 'Franklin Gothic', sans-serif; // Using fallback as you don't have NYTFranklin
+
+ .chanel-main-banner-paidpost-container,
+ .chanel-main-banner-share-container {
+  display: flex;
+  font-size: 14px; // Slightly smaller font for mobile
+
+  img {
+   width: 15px; // Smaller images for mobile
+   height: 14px;
+   flex-shrink: 0;
+  }
+ }
+
+ // Media query for larger screens
+ @media (min-width: 768px) {
+  padding: 10px 100px;
+
+  .chanel-main-banner-paidpost-container {
+   font-size: 16px;
+
+   img {
+    width: 21px;
+    height: 19px;
+   }
+  }
+
+  .chanel-main-banner-share-container {
+   font-size: 14.567px;
+
+   img {
+    width: 17.299px;
+    height: 15.478px;
+   }
+  }
+ }
+}
