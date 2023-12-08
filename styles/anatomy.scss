@@ -5,7 +5,6 @@
  font-style: normal;
  line-height: normal;
 
-
  h1 {
    font-family: "Poppins";
    font-size: 50px;
@@ -18,6 +17,7 @@
   font-size: 500px;
   font-weight: 400;
   letter-spacing: -41px;
+  height: 603px;
  }
 
  p {
@@ -25,5 +25,16 @@
   color: #FFF;
   font-size: 25px;
   font-weight: 400;
+  width: 522px;
+ }
+
+
+ img {
+  width: 85%;
+  height: 600px;
+ }
+
+ .anatomy-content {
+  padding-left: 119px;
  }
 }

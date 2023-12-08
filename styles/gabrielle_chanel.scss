@@ -1,0 +1,61 @@
+#gabrielle_chanel {
+ height: 100vh;
+ color: #000;
+ .gabrielle_chanel_image_content {
+  display: flex;
+  align-items: center;
+  padding-top: 250px;
+
+  img {
+   width: 100%;
+   clip-path: polygon(28.21% 0%, 80% 0%, 100% 15%, 100% 80%, 87.01% 100%, 24.86% 100%, 10% 80.00%, 10% 15.36%);
+   border-radius: 10px;
+  }
+  p {
+   padding: 0 160px;
+   font-family: "Poppins";
+   font-size: 35px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 121.5%; /* 42.525px */
+   width: 50%;
+  }
+ }
+ .gabrielle_chanel_content {
+  height: 50vh;
+  max-width: 517px;
+  margin: 0 auto;
+  padding: 316px 0px;
+
+  p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+ }
+ .gabrielle_chanel_perfume_image_content {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-family: "Poppins";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  span {
+   font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  img {
+   width: 100%;
+  }
+ }
+}
