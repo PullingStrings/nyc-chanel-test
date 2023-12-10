@@ -1,0 +1,89 @@
+#the_iconic {
+  background-color: black;
+  padding-bottom: px-to-vw(274);
+
+  h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: px-to-vw(55);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120.75%;
+    padding: px-to-vw(298) px-to-vw(430);
+  }
+
+  .the_iconic_perfume_image_content {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: px-to-vw(1110);
+    }
+
+    p {
+      color: #FFF;
+      font-family: "Poppins";
+      font-size: px-to-vw(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120.75%;
+      max-width: px-to-vw(518);
+      margin: auto 0;
+    }
+  }
+
+  .the_iconic_necklace_image_content {
+    display: flex;
+    align-items: center;
+    padding-top: px-to-vw(216);
+
+    img {
+      width: px-to-vw(939);
+    }
+
+    p {
+      color: #FFF;
+      font-family: "Poppins";
+      font-size: px-to-vw(35);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      max-width: px-to-vw(790);
+      margin: 0 auto;
+    }
+
+    span {
+      font-size: px-to-vw(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  // Media query for smaller screens
+  @media (max-width: 768px) {
+    padding-bottom: px-to-vw(137, 768);
+
+    h2 {
+      font-size: px-to-vw(30, 768);
+      padding: px-to-vw(149, 768) px-to-vw(215, 768);
+    }
+
+    .the_iconic_perfume_image_content,
+    .the_iconic_necklace_image_content {
+      img {
+        width: 100%; // Adjust width for smaller screens
+      }
+
+      p {
+        font-size: px-to-vw(14, 768);
+        max-width: 100%;
+      }
+
+      .the_iconic_necklace_image_content p {
+        font-size: px-to-vw(20, 768);
+      }
+    }
+  }
+}

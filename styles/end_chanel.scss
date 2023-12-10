@@ -1,0 +1,39 @@
+
+.end_chanel {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #fff;
+ color: black;
+ flex-direction: column;
+ padding: px-to-vw(175); // Converted padding to vw
+
+ img {
+  padding-bottom: px-to-vw(54); // Converted padding to vw
+ }
+
+ p,
+ a {
+  color: #000;
+  font-family: "Poppins";
+  font-size: px-to-vw(35); // Converted font size to vw
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140.7%;
+
+ }
+
+ a {
+  text-decoration-line: underline;
+ }
+
+ // Media query for smaller screens
+ @media (max-width: 768px) {
+  padding: px-to-vw(100, 768); // Reduced padding for small screens
+
+  p,
+  a {
+   font-size: px-to-vw(20, 768); // Smaller font size for small screens
+  }
+ }
+}

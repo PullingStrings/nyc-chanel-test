@@ -1,0 +1,38 @@
+#the_necklace {
+ background-color: black;
+
+ img {
+  width: 100%;
+ }
+
+ .the_necklace_content {
+  padding-top: px-to-vw(537);
+  padding-bottom: px-to-vw(339);
+  background-color: black;
+
+  p {
+   color: #FFF;
+   text-align: center;
+   font-family: "Poppins";
+   font-size: px-to-vw(35);
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120.75%;
+   max-width: px-to-vw(1060);
+   margin: 0 auto;
+  }
+ }
+
+ // Media query for smaller screens
+ @media (max-width: 768px) {
+  .the_necklace_content {
+   padding-top: px-to-vw(268, 768);
+   padding-bottom: px-to-vw(169, 768);
+
+   p {
+    font-size: px-to-vw(20, 768);
+    max-width: 100%;
+   }
+  }
+ }
+}

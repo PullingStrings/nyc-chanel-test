@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
+@import './functions';
+@import './breakpoints';
 
 @import 'styles/main_nyc_navbar';
 @import 'styles/chanel_banner';
@@ -10,6 +12,10 @@
 @import 'styles/anatomy';
 @import 'styles/introduction';
 @import 'styles/gabrielle_chanel';
+@import 'styles/the_iconic';
+@import 'styles/savoir_faire';
+@import 'styles/the_necklace';
+@import 'styles/end_chanel';
 
 /* Reset CSS */
 html,

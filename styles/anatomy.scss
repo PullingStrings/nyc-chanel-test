@@ -1,40 +1,68 @@
 .anatomy {
- background-color: #000;
- height: 100vh;
- color: #fff;
- font-style: normal;
- line-height: normal;
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
 
- h1 {
-   font-family: "Poppins";
-   font-size: 50px;
-   font-weight: 600;
-   text-transform: uppercase;
- }
+  h1 {
+    font-family: "Poppins";
+    font-size: px-to-vw(50);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 
- h2 {
-  font-family: "Poppins";
-  font-size: 500px;
-  font-weight: 400;
-  letter-spacing: -41px;
-  height: 603px;
- }
+  h2 {
+    font-family: "Poppins";
+    font-size: px-to-vw(500); // This seems extremely large. Is this intentional?
+    font-weight: 400;
+    letter-spacing: -41px;
+    height: 603px;
+  }
 
- p {
-  font-family: "Poppins";
-  color: #FFF;
-  font-size: 25px;
-  font-weight: 400;
-  width: 522px;
- }
+  p {
+    font-family: "Poppins";
+    color: #FFF;
+    font-size: px-to-vw(25);
+    font-weight: 400;
+    width: px-to-vw(522);
+  }
 
+  img {
+    width: 85%;
+    height: 600px;
+  }
 
- img {
-  width: 85%;
-  height: 600px;
- }
+  .anatomy-content {
+    padding-left: px-to-vw(119);
+  }
 
- .anatomy-content {
-  padding-left: 119px;
- }
+  // Media query for smaller screens
+  @media (max-width: 768px) {
+
+    h1 {
+      font-size: px-to-vw(25, 768);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: px-to-vw(300, 768); // Adjusted to a smaller value for small screens
+      letter-spacing: -20px; // Adjusted for readability
+      height: auto;
+    }
+
+    p {
+      font-size: px-to-vw(18, 768);
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .anatomy-content {
+      padding-left: px-to-vw(60, 768);
+    }
+  }
 }

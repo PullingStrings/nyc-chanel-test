@@ -1,0 +1,4 @@
+
+@function px-to-vw($size, $width: 1920) {
+ @return calc($size / $width) * 100vw;
+}
