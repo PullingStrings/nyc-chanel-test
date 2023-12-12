@@ -1,6 +1,6 @@
 
 #introduction {
- height: 50vh;
+//  height: 50vh;
  // margin: auto 0;
  background-color: black;
 
@@ -13,5 +13,14 @@
   line-height: normal;
   margin: 0 auto;
   max-width: 526px;
+  padding: 275px 0px;
  }
+  // Media query for smaller screens
+  @media (max-width: 768px) {
+
+  p {
+   font-size: 18px;
+   padding: 91px 12px;
+  }
+  }
 }

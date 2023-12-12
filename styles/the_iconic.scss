@@ -66,23 +66,36 @@
     padding-bottom: px-to-vw(137, 768);
 
     h2 {
-      font-size: px-to-vw(30, 768);
-      padding: px-to-vw(149, 768) px-to-vw(215, 768);
+      font-size: 30px;
+      text-align: left;
+      padding: 402px 12px 12px 12px;
+    }
+
+    .the_iconic_perfume_image_content {
+      flex-direction: column-reverse;
+    }
+    .the_iconic_necklace_image_content {
+      flex-direction: column;
     }
 
     .the_iconic_perfume_image_content,
     .the_iconic_necklace_image_content {
+      padding: 0 12px;
       img {
         width: 100%; // Adjust width for smaller screens
+        padding-top: 218px;
+        padding-bottom: 218px;
       }
 
       p {
-        font-size: px-to-vw(14, 768);
+        font-size: 17px;
         max-width: 100%;
       }
 
-      .the_iconic_necklace_image_content p {
-        font-size: px-to-vw(20, 768);
+      .the_iconic_necklace_image_content p,
+      span {
+        font-size: 20px;
+        max-width: 100%;
       }
     }
   }

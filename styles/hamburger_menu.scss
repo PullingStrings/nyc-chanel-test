@@ -59,12 +59,20 @@
  }
 }
 
+.menu__btn:hover {
+  >span,
+   >span::before,
+   >span::after {
+    background-color: #000;
+   }
+}
+
 .menu__box {
  display: none;
  position: absolute;
  top: 45px;
  right: 0;
- width: 240px;
+ width: 250px;
  list-style: none;
  transition: left 0.3s;
  border-radius: 10px;

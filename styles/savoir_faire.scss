@@ -1,58 +1,3 @@
-// #savoir_faire {
-//  display: flex;
-//  background-color: black;
-//  justify-content: center;
-//  align-items: center;
-
-
-//  .savoir_faire_container_one {
-//   display: inline-block;
-//   text-align: right;
-//   padding-right: 9px;
-//   img:nth-child(1) {
-//     width: px-to-vw(522);
-//   }
-//   img:nth-child(2) {
-//     width: px-to-vw(462);
-//    padding-top: 17px;
-//   }
-//  }
-//   .savoir_faire_container_two {
-//    padding: 0 10px;
-//    img {
-//     width: px-to-vw(772);
-//    }
-//   }
-//   .savoir_faire_container_three {
-//     img:nth-child(1) {
-//       width: px-to-vw(306);
-//     }
-//     img:nth-child(2) {
-//     width: px-to-vw(502);
-//     padding-right: 43px;
-//     padding-top: 21px;
-//     }
-//     padding-left: 9px;
-//   }
-// }
-
-//   .savoir_faire_content {
-//    padding-top: 274px;
-//    padding-bottom: 252px;
-//    background-color: black;
-
-//    p {
-//     max-width: 518px;
-//     margin: 0 auto;
-//     color: #FFF;
-//     font-family: "Poppins";
-//     font-size: px-to-vw(18);
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: 120.75%;
-//    }
-//   }
-
 #savoir_faire {
   display: flex;
   background-color: black;
@@ -100,10 +45,32 @@
 
   // Media query for smaller screens
   @media (max-width: 768px) {
+    flex-direction: column;
 
-    .savoir_faire_container_one,
-    .savoir_faire_container_two,
+    .savoir_faire_container_one{
+      img:nth-child(1) {
+        width: 55%;
+        float: left;
+        padding: 42px 0 42px 12px;
+      }
+      img:nth-child(2) {
+        width: 50%;
+      }
+    }
     .savoir_faire_container_three {
+      img:nth-child(1) {
+          width: 55%;
+          padding: 42px 0 42px 12px;
+        }
+
+        img:nth-child(2) {
+          float: right;
+          width: 50%;
+          padding-bottom: 42px;
+        }
+    }
+    .savoir_faire_container_two {
+      order: -1;
       img {
         width: 100%; // Adjust width for smaller screens
         padding-top: px-to-vw(10, 768);
@@ -130,13 +97,15 @@
   }
 
   @media (max-width: 768px) {
-    .savoir_faire_content {
-        padding-top: px-to-vw(137, 768);
-        padding-bottom: px-to-vw(126, 768);
+    padding-top: px-to-vw(137, 768);
+    padding-bottom: px-to-vw(126, 768);
+    padding-left: 12px;
+    padding-right: 12px;
 
-        p {
-          font-size: px-to-vw(14, 768);
-        }
+
+    p {
+        font-size: 17px;
+        max-width: 100%;
       }
   }
 }
