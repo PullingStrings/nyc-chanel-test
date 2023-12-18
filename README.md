@@ -13,4 +13,4 @@ To get started with this project, follow these steps:
 npm run dev
 
 Live Project Demo
-https://nyc-chanel-test-btz0l8d9f-pullingstrings.vercel.app/
+https://nyc-chanel-test.vercel.app/
