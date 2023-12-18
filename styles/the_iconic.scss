@@ -54,10 +54,12 @@
     }
 
     span {
+      display: block;
       font-size: px-to-vw(18);
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      width: 50%;
     }
   }
 
@@ -96,6 +98,7 @@
       span {
         font-size: 20px;
         max-width: 100%;
+        width: 100%;
       }
     }
   }
